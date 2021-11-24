@@ -3,7 +3,7 @@ import { json as d3Json, text as d3Text } from 'd3-request';
 import { tsvParseRows } from 'd3-dsv';
 
 function cleanUrl(text) {
-  return text.replace(/https?\:\/\/[A-Za-z0-9.\/]+/gi, '[url]');
+  return text.replace(/https?\:\/\/[A-Za-z0-9.\/]+/gi, '');
 }
 
 export function loadFile(file, callback) {

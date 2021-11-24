@@ -16,7 +16,7 @@ tsv('data/demo.tsv', (error, rawdata) => {
   container.innerHTML = '';
 
   new SentenTreeVis(container)
-    .data(model.getRenderedGraphs(5))
+    .data(model.getRenderedGraphs(11))
     .on('nodeClick', node => {
       console.log('node', node);
     })

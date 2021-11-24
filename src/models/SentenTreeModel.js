@@ -3,7 +3,7 @@ import { max, min } from 'lodash';
 import Heap from 'heap';
 import RawGraph from './RawGraph.js';
 
-const DEFAULT_NODE_COUNT = 150;
+const DEFAULT_NODE_COUNT = 30;
 
 function growSeq(seq, terms, minSupport, maxSupport, itemset) {
   /* find the next frequent sequence by inserting a new word to current sequence */
@@ -193,6 +193,9 @@ export default class SentenTreeModel {
       // minimum support is the max of
       // minSupportCount
       // and size * minSupportRatio
+      //2
+      //0.001
+      //0.75
       minSupportCount = 2,
       minSupportRatio = 0.001,
       maxSupportRatio = 0.75,

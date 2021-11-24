@@ -61,7 +61,7 @@ class App extends React.Component {
         .buildModel(data);
       console.timeEnd('Build model');
       console.time('Build rendered graphs');
-      const renderedGraphs = model.getRenderedGraphs(3);
+      const renderedGraphs = model.getRenderedGraphs(4);
       console.timeEnd('Build rendered graphs');
 
       this.setState({
@@ -125,9 +125,6 @@ class App extends React.Component {
           {this.renderSelectedNode()}
         </div>
         <div className="container">
-          <p>
-            Choose from these example datasets and see the visualization below.
-          </p>
           <select
             className="form-control"
             value={this.state.dataset}

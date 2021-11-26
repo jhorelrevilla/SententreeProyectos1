@@ -3,7 +3,7 @@ import { max, min } from 'lodash';
 import Heap from 'heap';
 import RawGraph from './RawGraph.js';
 
-const DEFAULT_NODE_COUNT = 30;
+const DEFAULT_NODE_COUNT = 300;
 
 function growSeq(seq, terms, minSupport, maxSupport, itemset) {
   /* find the next frequent sequence by inserting a new word to current sequence */

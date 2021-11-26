@@ -11,13 +11,13 @@ export const DATASETS = [
     name: '#COVID19',
     //file: 'metaverseSententree.tsv',
 //    file: 'COVID19.tsv',
-    file: 'COVID19Sententree3.tsv',
+    file: 'COVID19Sententree.tsv',
 
     
   },
   {
     name: 'eat24',
-    file: 'eat24Sententree.tsv',
+    file: 'eat24.tsv',
   }
 ];
 

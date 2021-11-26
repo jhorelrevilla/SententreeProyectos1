@@ -61,7 +61,7 @@ class App extends React.Component {
         .buildModel(data);
       console.timeEnd('Build model');
       console.time('Build rendered graphs');
-      const renderedGraphs = model.getRenderedGraphs(4);
+      const renderedGraphs = model.getRenderedGraphs(5);
       console.timeEnd('Build rendered graphs');
 
       this.setState({

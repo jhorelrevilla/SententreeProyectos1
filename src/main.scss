@@ -2,9 +2,10 @@
 @import './styles/_mockTweet';
 
 .page-header h1 {
-  @media (max-width: 600px) {
+  /*@media (max-width: 600px) {
     text-align: center;
   }
+  */
 }
 
 .star-block {
@@ -18,11 +19,12 @@
   float: left;
   vertical-align: bottom;
   li {
-    font-weight: 500;
+    font-weight: 50;
   }
 }
 
 .vis-container {
+  /*
   overflow-x: auto;
   overflow-y: hidden;
   padding: 20px;

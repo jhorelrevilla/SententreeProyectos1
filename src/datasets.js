@@ -9,15 +9,13 @@ export const DATASETS = [
   // },
   {
     name: 'delta',
-    //file: 'metaverseSententree.tsv',
-//    file: 'COVID19.tsv',
-//    file: 'COVID19Sententree.tsv',
-    file:'delta.tsv',
-    
+    file:'new_delta.tsv',
+    terms: {'variant':1, '@delta':1, '@delta____wither':1, 'omicron':1}
   },
-  {
-    name: 'eat24',
-    file: 'eat24.tsv',
-  }
+  //{
+    //name: 'covid',
+    //file: 'COVID19SententreeFINAL.tsv',
+//    terms: {'vaccinated':2, 'variant':2, 'omicron':2}
+  //}
 ];
 

@@ -1,7 +1,7 @@
 /* Sticky footer styles
 -------------------------------------------------- */
 html {
-  position: relative;
+  //position: relative;
   min-height: 100%;
 }
 body {
@@ -25,12 +25,12 @@ body {
   padding: 60px 15px 0;
 }*/
 .container .text-muted {
-  margin: 5px 0;
+  margin: 600px 0;
 }
 
 .footer > .container {
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 0px;
+  padding-left: 0px;
 }
 
 code {

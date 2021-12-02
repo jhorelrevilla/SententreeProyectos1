@@ -61,7 +61,7 @@ class App extends React.Component {
         .buildModel(data);
       console.timeEnd('Build model');
       console.time('Build rendered graphs');
-      const renderedGraphs = model.getRenderedGraphs(5);
+      const renderedGraphs = model.getRenderedGraphs(3);
       console.timeEnd('Build rendered graphs');
 
       this.setState({
@@ -137,8 +137,9 @@ class App extends React.Component {
             )}
           </select>
         </div>
+        <div style={{height: "50px"}}></div>
         <div className="container">
-          <div className="vis-container">
+          <div className="vis-containers">
             <SentenTreeVis
               data={renderedGraphs}
               onInit={chart => { this.chart = chart; }}
@@ -148,6 +149,9 @@ class App extends React.Component {
               onNodeMouseleave={() => { this.clearNode(); this.chart.clearHighlightNeighbors(); }}
             />
           </div>
+        </div>
+        <div height="100px">
+
         </div>
       </div>
     );
